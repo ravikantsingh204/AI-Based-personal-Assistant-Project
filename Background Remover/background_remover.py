@@ -44,7 +44,7 @@ b1 = tk.Button(top, text='Select here', height=2, font=('Arial', 20), bg='green'
 b1.grid(row=2, column=1, pady=20)
 
 image_name = tk.StringVar(top)
-image_name.set('enter file name')
+image_name.set('E:\\major project 2\\Download_file\\bg.png')
 
 e1 = tk.Entry(top, textvariable=image_name)
 e1.grid(row=3, column=1, pady=20)

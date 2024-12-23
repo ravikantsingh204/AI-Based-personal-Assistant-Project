@@ -98,6 +98,17 @@ def take_screenshot(name):
     print(f"Screenshot saved as '{filename}'")
 
 
+def remove_background():
+    subprocess.run(['python', 'E:\\major project 2\\Background Remover\\background_remover.py'])
+
+
+def extract_audio():
+    subprocess.run(['python', 'E:\\major project 2\\Audio Extractor\\main.py'])
+
+
+def tell_a_joke():
+    subprocess.run(['python', 'E:\\major project 2\\joke\\main.py'])
+
 
 
 if __name__ == "__main__":
@@ -200,6 +211,15 @@ if __name__ == "__main__":
         elif "screenshot" in query:
             # count = count + 1
             take_screenshot(str())
+
+        elif "remove background" in query:
+            remove_background()
+
+        elif "extract audio" in query:
+            extract_audio()
+
+        elif "joke" in query or "one more" in query:
+            tell_a_joke()
 
         else:
             print("No query matched")
